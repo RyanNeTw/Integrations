@@ -1,0 +1,690 @@
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&family=Montserrat&display=swap');
+    *,
+    *:before,
+    *,::after{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    ::-webkit-scrollbar{
+        width: 12px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(transparent,#184C99);
+        border-radius: 6px;
+    }
+    body{
+        background-color: #252B42;
+        
+    }
+    header {
+        background-image: url('https://media.discordapp.net/attachments/896065596934979694/951860948564594688/bg-header.png?width=1299&height=701');
+        background-size: cover;
+        padding: 0px 250px 0px 250px;
+        background-color: #252B42;
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    header nav div{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: row; 
+        gap: 15px;
+    }
+    header nav ul li {
+        align-self: center;
+        margin-top: 5px;
+        position: relative;
+    }
+    header li:after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        left: 0px;
+        bottom: -7px;
+        background-color: white;
+        transition: 0.7s;
+    }
+    header li:hover:after{
+        width: 100%;
+    }
+    header nav a {
+        color: white;
+        font-family: Montserrat;
+        align-self: center;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    header nav h2{
+        align-self: center ;
+    }
+    header nav h2 a{
+        color: white;
+        font-weight: bold;
+        font-family: Montserrat;    
+        font-size: 24px;
+    }
+    header nav button {
+        background-color: #23A6F0;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 14px;
+        font-family: montserrat;
+        padding: 10px 10px 10px 10px;
+    }
+    #intro{
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+    #intro img{
+        margin-bottom: 100px;
+    }
+    #intro div {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    #intro div h5{
+        color: #23A6F0;
+        font-size: 15px;
+        font-family: montserrat;
+    }
+    #intro div h1{
+        color: white;
+        font-size: 58px;
+        font-family: montserrat;
+        font-weight: bold;
+        width: 500px;
+    }
+    #intro div h3{
+        color: white;
+        font-size: 20px;
+        font-family: montserrat;
+        width: 380px;
+    }
+    .button-left{
+        background-color: #23A6F0;
+        color: white;
+        border: none;
+        font-size: 14px;
+        border-radius: 5px;
+        padding: 15px 40px;
+        cursor: pointer;
+    }
+    .button-right{
+        background-color: #184C99;
+        color: #23A6F0;
+        border: 1px #23A6F0 solid;
+        padding: 15px 40px;
+        font-size: 14px;
+        border-radius: 5px; 
+        cursor: pointer;
+    }
+
+
+    /* End header */
+
+    /* Start Practice */
+    #practice{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background-color: #252B42 ;
+        padding: 150px 250px 150px 250px;
+    }
+    #practice h4{
+        color: #23A6F0;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: bold;
+    }
+    #practice h1{
+        color: white;
+        font-size: 40px;
+        font-family: Montserrat;
+        font-weight: bold;
+    }
+    #practice h5{
+        color: white;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: bold;
+        width: 420px;
+        line-height: 20px;
+    }
+    .practice_div_tot{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    .practice_div_left{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 35px 40px 35px 40px;
+    }
+    .practice_div_mid_left{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 35px 40px 35px 40px;
+    }
+    .practice_div_mid_right{
+        background-color: #23A6F0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 35px 40px 35px 40px;
+    }
+    .smile{
+        background-color: #B3E3FF;
+        border-radius: 5px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .check{
+        background-color: #B9EAA8;
+        border-radius: 5px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+        background-color: white;
+        border-radius: 5px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .settings{
+        background-color: #FFDCD1;
+        border-radius: 5px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    #smile{
+        padding: 10px 10px 10px 10px;
+        align-self: center;
+        color: #23A6F0;
+        font-size: 20px;
+    }
+    #card{
+        padding: 10px 10px 10px 10px;
+        align-self: center;
+        color: #23A6F0;
+        font-size: 20px;
+    }
+    #check{
+        padding: 10px 10px 10px 10px;
+        align-self: center;
+        color: #2DC071;
+        font-size: 20px;
+    }
+    #settings{
+        padding: 10px 10px 10px 10px;
+        align-self: center;
+        color: #E74040;
+        font-size: 20px;
+    }
+    .practice_div_left h3 {
+        color: black;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: montserrat;
+    }
+    .practice_div_mid_right h3 {
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: montserrat;
+    }
+    .practice_div_left p{
+        color: #737373;
+        font-size: 14px;
+        font-family: montserrat;   
+    }
+    .practice_div_mid_right p{
+        color: white;
+        font-size: 14px;
+        font-family: montserrat;   
+    }
+    .practice_form{
+        background-color: #E74040;
+        width: 50px;
+        height: 2px;
+    }
+    /*End Practice*/
+
+
+
+
+    /*Start Courses */
+    #courses{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0px 250px 150px 250px;
+    }
+    .title_top{
+        font-weight: bold;
+        font-family: montserrat;
+        color: #23A6F0;
+        font-size: 14px;
+    }
+    .title{
+        font-weight: bold;
+        font-family: montserrat;
+        color: white;
+        font-size: 40px;
+    }
+    .title_bottom{
+        font-weight: bold;
+        font-family: montserrat;
+        color: white;
+        font-size: 14px;
+        width: 420px;
+        line-height: 20px;
+    }
+    .courses_tot{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        padding-top: 100px;
+    }
+    .courses{
+        display: flex;
+        flex-direction: column;
+        width: 226px;
+    }
+    .picture{
+        background-size: cover;
+        background-image: url('https://cdn.discordapp.com/attachments/894529932926013501/952246806048305223/product-cover-141.png');
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+    }
+    .picture button{
+        background-color: #E74040;
+        color: white;
+        height: 24px;
+        width: 51px;
+        border: none;
+        letter-spacing: 0.2s;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: Montserrat;
+        border-radius: 5px;
+        margin: 20px 0px 00px 30px;
+        cursor: pointer;
+    }
+    .circle_tot{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    .circle{
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .circle a{
+        text-decoration: none;
+        color: black;
+        align-self: center;
+    }
+    .circle i {
+        align-self: center;
+        font-size: 15px;
+    }
+    .courses_bottom{
+        background-color: white;
+        padding: 20px 0px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .courses_bottom h1{
+        font-size: 14px;
+        color: #23A6F0;
+        font-weight: bold;
+        font-family: montserrat;
+    }
+    .courses_bottom h2{
+        font-size: 16px;
+        color: black;
+        font-weight: bold;
+        font-family: montserrat;
+    }
+    .courses_bottom h3{
+        font-size: 14px;
+        color: #737373;
+        font-family: montserrat;
+        padding-right: 10px;
+    }
+    .courses_bottom h4{
+        font-size: 14px;
+        color: #737373;
+        font-family: montserrat;
+        font-weight: bold;
+    }
+    .courses_bottom h4 i{
+        color: #737373;
+    }
+    .money{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .money h5{
+        font-size: 16px;
+        color: #737373;
+        font-family: montserrat;
+        font-weight: bold;
+    }
+    .money h6{
+        font-size: 16px;
+        color: #40BB15;
+        font-family: montserrat;
+        font-weight: bold;
+    }
+    .line{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .line div{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .line div p{
+        font-size: 12px;
+        color: #737373;
+        font-family: montserrat;
+    }
+    .line i {
+        color: #23A6F0;
+        font-size: 12px;
+    }
+    .courses_bottom button{
+        font-size: 14px;
+        color: #23A6F0;
+        font-weight: bold;
+        font-family: montserrat;
+        border-radius: 20px;
+        border: 2px #23A6F0 solid;
+        width: 160px;
+        padding: 10px 10px 10px 10px;
+        cursor: pointer;
+    }
+    /*End courses*/
+
+
+    /*Start package*/
+    #package{
+        display: flex;
+        flex-direction: row;
+        gap: 240px;
+        padding: 0px 250px 0px 250px;
+    }
+    #package img{
+        height: 500px;
+    }
+    #package div{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 70px;
+    }
+    .rectangle{
+        width: 94px;
+        height: 7px;
+        background-color: #E74040;
+    }
+    #package h1{
+        font-family: montserrat;
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: 0.2s;
+        color: white;
+        width: 300px;
+    }
+    #package h2{
+        font-family: montserrat;
+        font-size: 14px;
+        letter-spacing: 0.2s;
+        color: white;
+        line-height: 20px;
+        width: 350px;
+    }
+    #package a{
+        font-family: montserrat;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.2s;
+        color: #23A6F0;
+        line-height: 24px;
+        width: 350px;
+    }
+    /*End package*/
+
+
+    /*Start comment*/
+    #comment{
+        padding: 150px 250px 0px 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #comment h4{
+        color: #23A6F0;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: bold;
+    }
+    #comment h1{
+        color: white;
+        font-size: 40px;
+        font-family: Montserrat;
+        font-weight: bold;
+    }
+    #comment h5{
+        color: white;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: bold;
+        width: 420px;
+        line-height: 20px;
+    }
+    .tot{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 50px;
+    }
+    #comment .article{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 500px;
+        gap: 20px;
+        padding: 10px 0px 10px 0px;
+    }
+    #comment img{
+        border-radius: 50%;
+        align-self: center;
+    }
+    #comment p{
+        width: 300px;
+        align-self: center;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        font-family: montserrat;
+    }
+    #comment article{
+        align-self: center;
+        color: #F3CD03;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    #comment h2{
+        align-self: center;
+        color: #252B42;
+        font-size: 16px;
+        font-family: montserrat;
+        font-weight: bold;
+    }
+    #comment h3{
+        align-self: center;
+        color: #737373;
+        font-size: 16px;
+        font-family: montserrat;
+    }
+    /*End comment*/
+
+
+    /*Start Join*/
+    #join{
+        padding: 250px 250px 250px 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    #join article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    #join h4{
+        align-self: center;
+        color: #23A6F0;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: bold;
+    }
+    #join h1{
+        align-self: center;
+        color: white;
+        font-size: 40px;
+        font-family: Montserrat;
+        font-weight: bold;
+    }
+    #join h5{
+        align-self: center;
+        color: white;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: bold;
+        text-align: center;
+        width: 500px;
+        line-height: 20px;
+    }
+    #join div{
+        width: 688px;
+        height: 58px;
+        background-color: white ;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: center;
+    }
+    #join div p{
+        align-self: center;
+        color: #737373;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    #join div button{
+        background-color: #23A6F0;
+        border: white 2px solid;
+        color: white;
+        font-size: 14px;
+        font-family: Montserrat;
+        padding: 15px 22px 15px 22px;
+    }
+    /*End join*/
+
+
+
+    /*Start footer*/
+    footer{
+        background-color: white;
+        padding: 100px 250px 100px 250px;
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+    footer div{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer div h2{
+        color: #252B42;
+        font-size: 24px;
+        font-family: Montserrat;
+        font-weight: bold;
+    }
+    footer div a{
+        text-decoration: none;
+        color: #737373;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: bold;
+        line-height: 20px;
+        letter-spacing: 0.2s;
+    }
+    footer div article{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+    }
+    footer div a i{
+        color: #23A6F0;
+        font-size: 20px;
+        width: 20px;
+    }
+    footer div a i:hover{
+        opacity: 80%;
+    }
+    footer div a p{
+        width: 200px;
+    }
