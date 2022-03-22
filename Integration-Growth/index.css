@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&family=Montserrat:wght@900&family=Roboto&display=swap');
+*,
+*:before,
+*,::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+    opacity: 0%;
+  }
+body{
+    background-color: #1e2035;
+    overflow-x: hidden;
+}
+#particles-js{
+    background-image: url('https://media.discordapp.net/attachments/896065596934979694/953599890242568222/bg.png?width=1174&height=701');
+    background-size: cover;
+    border-bottom: 1px solid grey;
+}
+#wrapper{
+    position: absolute;
+    top: 0px;
+}
+header{
+    padding: 20px 200px 0px 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header nav div{
+    display: flex;
+    flex-direction: row;
+    gap:40px ;
+}
+header nav div ul{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+header nav div ul li{
+    align-self: center;
+}
+header nav div ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: roboto;
+    color: white;
+    border:  none;
+    padding: 0px;
+    position: relative;
+}
+header nav div ul li a:hover{
+    color: #ffc576;
+    background-color: #1e2035;
+}
+header nav div ul li a::after{
+    content: '';
+    position: absolute;
+    background-color: #ffc576;
+    width: 0;
+    height: 2px;
+    top: 30px;
+    left: 0px;
+    transition: 0.3s;
+}
+header nav div ul li a:hover:after{
+    width: 100%;
+}
+header nav div a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: roboto;
+    color: #ffc576;
+    border: 1px solid #ffc576;
+    align-self: center;
+    padding: 10px 15px 10px 15px;
+    transition: 0.2s;
+}
+header nav div a:hover{
+    color: #1e2035;
+    background-color: #ffc576;
+}
+header div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header div article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+header div article h3{
+    color: #ffc576;
+    font-family: roboto;
+    font-size: 30px;
+}
+header div article h1{
+    color: white;
+    font-family: roboto;
+    font-size: 70px;
+    letter-spacing: 3px;
+    width: 130px;
+}
+header div article h4{
+    color: white;
+    font-family: roboto;
+    font-size: 20px;
+    padding-top: 20px;
+}
+/*End Header*/
+
+
+
+
+
+
+
+
+
+/*Start menu*/
+#menu{
+    background-color: #1e2035;
+    padding: 00px 200px 0px 200px;
+}
+#menu div{
+    background-color: #303552;
+}
+#menu div ul li{
+    flex: 1;
+}
+#menu div ul{
+    display: flex;
+    flex-direction: row;
+}
+#menu div ul li label{
+    padding: 20px 0px 20px 0px;
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-family: roboto;
+    cursor: pointer;
+    text-align: center;
+    background-color: #292c47;
+    border: #34374f 1px solid;
+}
+#menu div article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 80px 50px 30px 80px;
+    display: none;
+}
+#menu div article div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#menu div article div h3{
+    color: #ffc576;
+    font-family: roboto;
+    font-size: 14px;
+}
+#menu div article div h1{
+    color: white;
+    font-family: roboto;
+    font-size: 40px;
+    line-height: 50px;
+}
+#menu div article div p{
+    color: white;
+    font-size: 14px;
+    font-family: roboto;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+#menu div article div p span{
+    color: #ffc576;
+}
+#menu div article div a{
+    background-color: #303552;
+    text-decoration: none;
+    color: #ffc576;
+    font-family: roboto;
+    border: 1px solid #ffc576;
+    width: 140px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+#menu div input{
+    display: none;
+}
+#menu div ul li label:hover,
+#tab-about:checked ~ ul label[for="tab-about"],
+#tab-skills:checked ~ ul label[for="tab-skills"],
+#tab-service:checked ~ ul label[for="tab-service"],
+#tab-interview:checked ~ ul label[for="tab-interview"],
+#tab-award:checked ~ ul label[for="tab-award"],
+#tab-exhibition:checked ~ ul label[for="tab-exhibition"]
+{
+    background-color: #ffc576;
+    color: #303552;
+}
+#tab-about:checked ~ #tab-about,
+#tab-skills:checked ~ #tab-skills,
+#tab-service:checked ~ #tab-service,
+#tab-interview:checked ~ #tab-interview,
+#tab-award:checked ~ #tab-award,
+#tab-exhibition:checked ~ #tab-exhibition{
+    display: flex;
+}
+/*End Menu*/
+
+
+
+
+/*Start carousselle*/
+#carouselle{
+    padding-bottom: 100px;
+}
+#carouselle h3{
+    color: #ffc576;
+    font-size: 14px;
+    font-family: roboto;
+    padding: 150px 200px 0px 200px;
+}
+#carouselle h1{
+    color: white;
+    font-size: 35px;
+    font-family: roboto;
+    padding: 15px 200px 0px 200px;
+}
+#carouselle div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0px 100px 0px 200px;
+    margin-top:40px;
+    overflow-x: auto;
+}
+#carouselle article{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #303552;
+    border-bottom: #ffc576 solid 2px;
+}
+#carouselle article img{
+    border-radius: 6px;
+}
+#carouselle article h4{
+    color: #ffc576;
+    font-size: 12px;
+    font-family: roboto;
+    padding: 10px 20px 0px 20px ;
+}
+#carouselle article h2{
+    color: white;
+    font-size: 18px;
+    font-family: roboto;
+    padding: 0px 20px 0px 20px ;
+}
+#carouselle article h5{
+    color: white;
+    font-size: 12px;
+    font-family: roboto;
+    padding: 0px 20px 0px 20px ;
+}
+#carouselle article a{
+    color: #ffc576;
+    font-size: 12px;
+    font-family: roboto;
+    text-decoration: none;
+    border: 1px solid #ffc576;
+    border-radius: 3px;
+    width: 92px;
+    padding: 8px 12px 8px 12px;
+    margin:10px 0px 40px 20px ;
+    transition: 0.2s;
+}
+#carouselle article a:hover{
+    background-color: #ffc576;
+    color: #303552;
+}
+/*End Carouselle*/
+
+
+
+
+
+/*Start Carouselle*/
+#testimonial{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #22253c;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+#testimonial .tot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 200px 0px 200px;
+}
+#testimonial div .title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#testimonial div div h3{
+    color: #ffc576;
+    font-family: roboto;
+    font-size: 14px;
+}
+#testimonial div div h1{
+    color: white;
+    font-family: roboto;
+    font-size: 35px;
+}
+#testimonial div span{
+    display: flex;
+    flex-direction: row;
+}
+#arrow_left{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    align-self: center;
+    color: white;
+    border: #ffc576 solid 1px;
+    padding: 7px 7px 7px 7px;
+}
+#arrow_right{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    align-self: center;
+    color: white;
+    border: #ffc576 solid 1px;
+    padding: 7px 7px 7px 7px;
+}
+#testimonial .tot_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 200px 0px 200px;
+}
+#testimonial div article{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 30px 20px 0px 20px ;
+}
+#testimonial div article .article_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#testimonial div article .article_top span{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#testimonial div article span img{
+    border-radius: 50%;
+    height: 80px;
+}
+#testimonial div article .article_top span .article_top_txt{
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+#testimonial div article .article_top span .article_top_txt h4{
+    color: white;
+    font-family: roboto;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+#testimonial div article .article_top span .article_top_txt h6{
+    color: #ffc576;
+    font-family: roboto;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+#testimonial div article .article_top i{
+    font-size: 70px;
+    color: #1b1e30;
+}
+#testimonial div article p{
+    color: white;
+    font-size: 14px;
+    font-family: roboto;
+    line-height: 25px;
+    padding-bottom:30px ;
+}
+/*End Testimonial*/
+
+
+
+
+/*Start Clients*/
+#client{
+    background-color: #1e2135;
+    padding: 50px 200px 50px 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#client span{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#client span h3{
+    color: #ffc576;
+    font-family: roboto;
+    font-size: 14px;
+}
+#client span h1{
+    color: white;
+    font-family: roboto;
+    font-size: 35px;
+}
+#client div {  
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 25px 25px;
+}
+#client div img:hover{
+    opacity: 80%;
+}
+/*End Client*/
+
+
+
+
+
+/*Start Footer*/
+footer{
+    padding: 50px 200px 50px 200px;
+    background-color: #303452;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+footer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer div a img{
+    border: none;
+}
+footer div h1{
+    color: white;
+    font-size: 40px;
+    align-self: center;
+}
+.footer_a {
+    color: #ffc576;
+    background-color: #303452;
+    border: #ffc576 1px solid;
+    align-self: center;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    font-family: roboto;
+    transition: 0.2s;
+}
+.footer_a:hover{
+    background-color: #ffc576;
+    color: #303452;
+}
+footer p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-family: roboto;
+}
+/*End Footer*/
+
+#open, #close{
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 950px) {
+    
+    header div img {
+        display: none;
+    }
+    header{
+        padding: 20px 100px 0px 100px;
+        gap: 50px;
+        justify-content: space-between;
+    }
+    header nav div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    #open, #close{
+        display: flex;
+        padding-left: 200px;
+    }
+    #wrap {
+        font-family: sans-serif;
+        font-size: 21px;
+        line-height: 1.6;
+        margin: 0;
+        display: flex;
+        color: #f00;
+        transition: transform .4s cubic-bezier(.25, .1, .25, 1);
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      #wrap nav div{
+          transition: 1s;
+      }
+      #wrap:not(:target) nav div {
+        transform: translate3d(100px, 0, 0);
+      }
+      
+      #wrap:target nav div {
+        transform: translate3d(250px, 0, 0);
+      }
+      
+      #open,
+      #close {
+        height: 44px;
+        text-align: right;
+        display: block;
+        margin-right: -30px;
+      }
+      
+      #wrap:target #open,
+      #wrap:not(:target) #close {
+        display: none;
+      }
+      
+      #wrap:target #open {
+        display: none;
+      }
+      #wrap a{
+          display: block;
+      }
+      #wrap ul{
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+      }
+      header nav div ul li a::after{
+          top: 20px;
+      }
+      header div article h3{
+          font-size: 20px;  
+      }
+      header div article h1{
+          font-size: 30px;
+          width: auto;
+          position: relative;
+      }
+      header div article h1::after{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #ffc576;
+          opacity: 20%;
+      }
+      header div article h4{
+          font-size: 20px;
+          padding-top: 0px;
+      }
+      header div article{
+          gap: 5px;
+      }
+      header div article{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+      }
+      /*End Header*/
+
+      /*Start Menu*/
+      #menu{
+          padding: 0px 100px 0px 100px;
+      }
+      #menu div article img{
+          display: none;
+      }
+      /*End Menu*/
+
+      /*Start Carouselle*/
+      #carouselle h3, #carouselle h1, #carouselle div{
+          padding-left: 100px;
+      }
+      /*End Carouselle*/
+
+      /*Start Testimonial*/
+      #testimonial .tot, #testimonial .tot_bottom{
+          padding: 0px 100px 0px 100px;
+      }
+      /*End Testimonial*/
+
+      /*Start Client*/
+      #client{
+          padding: 20px 100px 30px 100px;
+          display: flex;
+          flex-direction: column;
+          gap: 25px ;
+      }
+      #client div img{
+          height: 180px;
+      }
+      /*End Client*/
+
+      /*Start Footer*/
+      footer{
+        padding: 50px 100px 50px 100px;
+      }
+      footer div h1{
+          font-size: 30px;
+      }
+      /*End Footer*/
+      
+
+
+}
